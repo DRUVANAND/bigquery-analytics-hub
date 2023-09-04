@@ -11,7 +11,7 @@ data "google_iam_policy" "admin" {
   binding {
     role    = "roles/viewer"
     members = [
-  "serviceAccount:313633910931-compute@developer.gserviceaccount.com",
+  "serviceAccount:123abc-compute@developer.gserviceaccount.com",
 ]
 
   }
@@ -46,11 +46,11 @@ resource "google_bigquery_analytics_hub_listing" "listing" {
 
    # Add publisher and request access
   publisher {
-    name = "dhruv"
-    primary_contact = "313633910931-compute@developer.gserviceaccount.com"
+    name = "publisher"
+    primary_contact = "123abc-compute@developer.gserviceaccount.com"
   }
 
-  request_access = "558984249017-compute@developer.gserviceaccount.com"
+  request_access = "456xyz-compute@developer.gserviceaccount.com"
 }
 
 resource "google_bigquery_dataset" "listing" {
