@@ -1,6 +1,6 @@
 variable "project" {
   description = "The region where the resources will be created"
-  default     = "pro-signal-386907"
+  default     = "your-project-id"
 }
 
 variable "region" {
