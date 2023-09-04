@@ -1,4 +1,4 @@
-name: "Deploy to Bastion Host"
+name: "Deploy BigQuery Analytics Hub"
 
 on:
   push:
@@ -40,6 +40,6 @@ jobs:
         id: apply
         run: terraform apply -auto-approve
         
-      - name: Terraform Destroy
-        id: destroy
-        run: terraform destroy -auto-approve
+      #- name: Terraform Destroy
+       # id: destroy
+       # run: terraform destroy -auto-approve
