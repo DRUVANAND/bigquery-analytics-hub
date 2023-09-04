@@ -5,10 +5,10 @@ terraform {
       version = "4.58.0"
     }
   }
-  #backend "gcs" {
-  #   bucket  = "your-backend-bucket"
-  #   prefix  = "bigquery-analytics-hub"
-  # }
+  backend "gcs" {
+     bucket  = "your-backend-bucket"
+     prefix  = "bigquery-analytics-hub"
+   }
 }
 
 provider "google" {
