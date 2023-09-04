@@ -6,14 +6,13 @@ terraform {
     }
   }
   #backend "gcs" {
-  #   bucket  = "dhruv-bigquery-analytics-hub"
+  #   bucket  = "your-backend-bucket"
   #   prefix  = "bigquery-analytics-hub"
   # }
 }
 
 provider "google" {
-  credentials = "C:/UpWork Projects/application_default_credentials.json"
-  project     = "pro-signal-386907"
+  project     = "your-project-id"
 }
 
 module "bigquery_analytics_hub" {
